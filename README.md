@@ -1,18 +1,87 @@
-## Getting Started
+# Lab4 – Дэлгүүрийн кассын систем (POS)
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Төслийн тайлбар
 
-## Folder Structure
+Энэхүү лабораторийн ажил нь Java хэл ашиглан объект хандалтат программчлалын зарчмаар дэлгүүрийн кассын системийн үндсэн бүтэц зохион байгуулалтыг загварчилсан болно.
 
-The workspace contains two folders by default, where:
+Програм нь бүрэн хэмжээний кассын систем биш бөгөөд бараа бүтээгдэхүүн борлуулах үйл явцыг класс, объект, холбоос бүтэц ашиглан дүрсэлсэн.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Ашигласан программчлалын хэл
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- Java
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Хэрэгжүүлсэн классүүд
 
-## Dependency Management
+### Product.java
+Барааны мэдээллийг хадгална.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Агуулга:
+- Барааны нэр
+- Зураасан код
+- Үнэ
+
+### Customer.java
+Хэрэглэгчийн мэдээллийг хадгална.
+
+Агуулга:
+- Нэр
+- Хаяг
+- Утасны дугаар
+
+### Employee.java
+Борлуулалт хийж буй ажилтны мэдээлэл.
+
+Агуулга:
+- Нэр
+
+### DiscountCard.java
+Хөнгөлөлтийн картын мэдээлэл.
+
+Агуулга:
+- Картын код
+- Хөнгөлөлтийн хувь
+
+### SOLine.java
+Борлуулалтын нэг мөр мэдээлэл.
+
+Агуулга:
+- Бараа
+- Тоо ширхэг
+- Нэгж үнэ
+- Нийт үнэ
+
+### SalesOrder.java
+Нэг борлуулалтын захиалга.
+
+Агуулга:
+- Хэрэглэгч
+- Ажилтан
+- Борлуулалтын мөрүүд
+- Нийт дүн
+- Хөнгөлөлт
+- Эцсийн төлбөр
+
+### Main.java
+Програмыг ажиллуулах үндсэн файл. Жишээ өгөгдөл үүсгэж, борлуулалтын мэдээллийг хэвлэнэ.
+
+## Програмын ажиллагаа
+
+1. Бараанууд үүсгэнэ.
+2. Хэрэглэгч болон ажилтан үүсгэнэ.
+3. Борлуулалтын мөрүүд нэмнэ.
+4. Нийт үнийг бодно.
+5. Хөнгөлөлт тооцно.
+6. Эцсийн төлбөрийг хэвлэнэ.
+
+## Жишээ гаралт
+
+```text
+=== RECEIPT ===
+Customer: Saraa
+Employee: Bat
+Milk x 2 = 10000
+Bread x 1 = 3000
+----------------
+Total: 13000
+Discount: 1300
+Final: 11700
